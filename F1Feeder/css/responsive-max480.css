@@ -1,0 +1,27 @@
+@media (max-width: 480px) {
+  /* line 6, responsive-max480.css.scss */
+  nav#primary > ul > li {
+    width: 33.3%;
+    margin-left: -3px; }
+
+  /* line 12, responsive-max480.css.scss */
+  .modal.black-box .modal-header .close {
+    margin-top: -5px; } 
+
+  .mobile-logo {
+  	display: block;
+  	background-image: url('../images/main-logo-bg-480.png');
+  	width: 100%;
+  	height: 88px;
+  	text-align: center;
+  }
+
+  nav.main-nav.main-menu .mobile-logo .logo_480 {
+  	display: inline;
+  	height: 88px;
+  	width: auto;
+  }
+
+  nav.main-nav.main-menu li.logo img.logo_768, .responsive_column {display: none;}
+
+}
