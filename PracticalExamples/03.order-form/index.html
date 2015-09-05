@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
 <html ng-app="OrderFormApp">
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<script src="../bower_components/angular/angular.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/controllers.js" type="text/javascript" charset="utf-8"></script>
-	</head>
-	<body>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="../bower_components/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/controllers.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
 
-	<form ng-app ng-controller="OrderFormController">
+	<form ng-controller="OrderFormController">
 		<h1>Services</h1>
 		<ul>
 			<li ng-repeat="service in services" ng-click="toggleActive(service)" ng-class="{active:service.active}">
@@ -20,6 +20,6 @@
 			Total: <span>{{total() | currency}}</span>
 		</div>
 	</form>
-		
-	</body>
+
+</body>
 </html>
