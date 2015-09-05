@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="InlineEditorApp">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="../bower_components/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/controllers.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ng-controller="InlineEditorController">
+		
+		<div id="main" ng-click="hideToolTip()">
+			<div class="tooltip" ng-click="$event.stopPropagation()" ng-show="showtooltip">
+				<input type="text" ng-model="value" ng-focus="emptyDefault()"/>
+			</div>
+			
+			<p ng-click="toggleTooltip($event)">{{value}}</p>
+			
+		</div>
+		
+	</body>
+</html>
